@@ -1,0 +1,9 @@
+.hiderButton:hover .hideButton {
+  display: inline-block;
+}
+
+.borderus {
+  border: 2px solid #547aa5 !important;
+  background-color: rgb(86, 78, 82) !important;
+  color: rgb(80, 216, 215) !important;
+}

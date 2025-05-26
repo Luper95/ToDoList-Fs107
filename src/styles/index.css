@@ -9,3 +9,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.base-new {
+  background-color: rgb(41, 49, 50) !important ;
+}
+
+.text-new {
+  color: rgb(80, 216, 215) !important;
+}
+
+.border-new {
+  border: 1 solid rgb(84, 122, 165) !important;
+}
+
+body {
+  background-color: rgb(41, 49, 50);
+  font-family: "ruluko", monospace;
+  font-weight: bold;
+}
+
+.ruluko-regular {
+  font-family: "Ruluko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

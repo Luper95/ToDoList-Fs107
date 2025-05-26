@@ -1,0 +1,14 @@
+.howdy {
+  background: #564e52;
+  border: solid 2px rgb(84, 122, 165);
+  box-shadow:
+    /* The top layer shadow */ 0 1px 1px rgba(84, 122, 165, 0.15),
+    /* The second layer */ 0 10px 0 -5px rgb(84, 122, 165),
+    /* The second layer shadow */ 0 10px 1px -4px rgba(84, 122, 165, 0.15),
+    /* The third layer */ 0 20px 0 -10px rgb(84, 122, 165),
+    /* The third layer shadow */ 0 20px 1px -9px rgba(84, 122, 165, 0.15);
+  /* Padding for demo purposes */
+  padding: 10px 0px 1px 0px;
+  margin-top: 0px;
+  color: rgb(80, 216, 215) !important;
+}
