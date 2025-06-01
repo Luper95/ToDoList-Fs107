@@ -28,7 +28,7 @@ export const CreateNewUser = () => {
       if (response.ok) {
         // El usuario ya existe, no hacemos nada
         console.log("Usuario ya existe, no se crea de nuevo.");
-        return response.json(); // o retornar directamente para continuar con el flujo
+        return;
       }
 
       if (response.status === 404) {
