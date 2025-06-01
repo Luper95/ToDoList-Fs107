@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./InputComponent.css"; // Assuming you have a CSS file for styles
+import { PostNewTodo } from "../../api/ToDoServices";
 const InputComponent = ({ addToList }) => {
   const [task, setTask] = useState("");
 
@@ -9,8 +10,11 @@ const InputComponent = ({ addToList }) => {
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && task.trim() !== "") {
       //send to father component
-      addToList(task);
+      PostNewTodo(task);
       setTask("");
+      setTimeout(() => {
+        addToList(); // Call the function to update the list in the parent component
+      }, 200);
     }
   };
 

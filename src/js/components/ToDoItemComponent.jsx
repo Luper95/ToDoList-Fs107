@@ -1,10 +1,14 @@
 import CloseButtonComponent from "./CloseButtonComponent";
 import "./ToDoItemComponent.css";
 
-const ToDoItemComponent = ({ task, onDelete, idem }) => {
+const ToDoItemComponent = ({ task, toDeleteTask, idToDelete }) => {
   return (
     <div className="d-flex justify-content-between borderus border rounded-2 mb-0 px-2 hiderButton">
-      {task} <CloseButtonComponent closeTask={() => onDelete(idem)} />
+      {task}{" "}
+      <CloseButtonComponent
+        deleterHander={toDeleteTask}
+        idDelete={idToDelete}
+      />
     </div>
   );
 };

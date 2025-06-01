@@ -1,10 +1,11 @@
 import "./CloseButtonComponent.css";
-const CloseButtonComponent = ({ closeTask }) => {
+import DeleteOldTask from "../../api/ToDoServices";
+const CloseButtonComponent = ({ deleterHander, idDelete }) => {
   return (
     <div>
       <button
         type="button"
-        onClick={closeTask}
+        onClick={() => deleterHander(idDelete)}
         className="btn-close hideButton"
         aria-label="Close"
         style={{

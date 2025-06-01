@@ -2,7 +2,6 @@ import { React, UseState } from "react";
 import "./RemainingToDosComponent.css";
 
 const RemainingToDosComponent = ({ remainings }) => {
-  console.log("remainings is " + remainings.length);
   return (
     <div className="howdy">
       <p className="">
